@@ -11,4 +11,4 @@ def solution(x_success: int,
              y_success: int,
              y_cnt: int) -> bool:
     p = proportions_ztest([x_success, y_success], [x_cnt, y_cnt], alternative='larger')
-    return p[1] > alpha
+    return p[1] < alpha
